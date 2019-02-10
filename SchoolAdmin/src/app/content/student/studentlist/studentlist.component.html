@@ -1,8 +1,8 @@
-<div class="d-flex">
-  <table class="table table-responsive table-striped ">
+<div class="table-responsive">
+  <table class="table table-striped " >
     <caption>List of Students</caption>
     <thead>
-      <tr>
+      <tr >
         <th scope="col">#</th>
         <th scope="col">Name</th>
         <th scope="col">Email</th>
@@ -16,11 +16,17 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <th scope="row">1</th>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>@mdo</td>
+      <tr *ngFor ="let student of students">
+        <th scope="row">{{student.id}}</th>
+        <td>{{student.name}}</td>
+        <td>{{student.email}}</td>
+        <td>{{student.adharNo}}</td>
+        <td>{{student.contactNo}}</td>
+        <td>{{student.address}}</td>
+        <td>{{student.state}}</td>
+        <td>{{student.city}}</td>
+        <td>{{student.pinCode}}</td>
+
       </tr>
     </tbody>
   </table>

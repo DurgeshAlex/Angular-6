@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Student } from '../../student/Student';
+import { StudentService } from '../../student/student.service';
 
 @Component({
   selector: 'app-enrollstudent',
@@ -8,10 +9,27 @@ import { Student } from '../../student/Student';
 })
 export class EnrollstudentComponent implements OnInit {
 student:Student = new Student();
-  onSave(student: Student){
-    console.log(student);
+id:number=0;
+ newStudent:Student; 
+onSave(student: Student){
+  this.id++;
+  this.newStudent = new Student();
+  this.createNewStudent(this.newStudent,student);
+  this.studentService.enrollStudent(this.newStudent);
+}
+  createNewStudent(newStudent:Student,student:Student){
+    newStudent.address=student.address;
+    newStudent.adharNo= student.adharNo;
+    newStudent.city=student.city;
+    newStudent.contactNo=student.contactNo;
+    newStudent.email=student.email;
+    newStudent.id=this.id;
+    newStudent.name=student.name;
+    newStudent.pinCode=student.pinCode;
+    newStudent.state=student.state;
   }
-  constructor() { }
+
+  constructor(private studentService:StudentService) { }
 
   ngOnInit() {
   }

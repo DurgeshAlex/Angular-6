@@ -1,54 +1,67 @@
-<div class="accordion" id="studentenrollform">
-  <div class="card">
-    <div class="card-header text-info">
-      <div data-toggle="collapse" aria-expanded="true" data-target="#basicinfo" aria-controls="basicinfo">
-        Basic Info
+<div class="card">
+  <div class="card-header">
+    <div class="row my-auto">
+      <div class="col-md-6 my-auto">     <h3><div class="badge badge-pill badge-info">Student Enrollment Form </div> </h3>         </div>
+      <div class="col-md-6">
+          <div class="d-flex justify-content-end">
+              <div class="btn btn-primary" (click)="onSave(student)">Save</div>
+            </div>
       </div>
     </div>
+  </div>
+  <div class="card-body">
 
-    <div id="basicinfo" class="collapse show" data-parent="#studentenrollform">
-      <div class="card-body">
-        <div class="row">
-          <div class="col-md-3">
-            <div class="form-group mr-2">
-              <label for="name">Student Name:</label>
-              <input type="text" [(ngModel)]="student.name" class="form-control" id="name">
-            </div>
+    <div class="accordion" id="studentenrollform">
+      <div class="card">
+        <div class="card-header text-info">
+          <div data-toggle="collapse" aria-expanded="true" data-target="#basicinfo" aria-controls="basicinfo">
+            Basic Info
           </div>
-          <div class="col-md-3">
-            <div class="form-group mr-2">
-              <label for="email">Email address:</label>
-              <input  type="email" class="form-control" id="email" [(ngModel)]="student.email" >
-            </div>
-          </div>
+        </div>
 
-          <div class="col-md-3">
-            <div class="form-group mr-2">
-              <label for="contactnumber">Contact No.:</label>
-              <input type="number" class="form-control" id="contactnumber" [(ngModel)]="student.contactNo" >
-            </div>
-          </div>
+        <div id="basicinfo" class="collapse show" data-parent="#studentenrollform">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="form-group mr-2">
+                  <label for="name">Student Name:</label>
+                  <input type="text" [(ngModel)]="student.name" class="form-control" id="name">
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group mr-2">
+                  <label for="email">Email address:</label>
+                  <input type="email" class="form-control" id="email" [(ngModel)]="student.email">
+                </div>
+              </div>
 
-          <div class="col-md-3">
-            <div class="form-group mr-2">
-              <label for="adhar">Adhar No.</label>
-              <input type="text" class="form-control" id="adhar" [(ngModel)]="student.adharNo">
+              <div class="col-md-3">
+                <div class="form-group mr-2">
+                  <label for="contactnumber">Contact No.:</label>
+                  <input type="number" class="form-control" id="contactnumber" [(ngModel)]="student.contactNo">
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <div class="form-group mr-2">
+                  <label for="adhar">Adhar No.</label>
+                  <input type="text" class="form-control" id="adhar" [(ngModel)]="student.adharNo">
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-header text-info">
-      <div class="collapsed" aria-expanded="false" data-toggle="collapse" data-target="#addressdetail"
-        aria-controls="addressdetail">
-        Address Details
-      </div>
-    </div>
-    <div id="addressdetail" class="collapse" data-parent="#studentenrollform">
-      <div class="card-body">
-          <div class="row">
+      <div class="card">
+        <div class="card-header text-info">
+          <div class="collapsed" aria-expanded="false" data-toggle="collapse" data-target="#addressdetail"
+            aria-controls="addressdetail">
+            Address Details
+          </div>
+        </div>
+        <div id="addressdetail" class="collapse" data-parent="#studentenrollform">
+          <div class="card-body">
+            <div class="row">
               <div class="col-md-3">
                 <div class="form-group mr-2">
                   <label for="paddress">Permanent Address :</label>
@@ -61,14 +74,14 @@
                   <input type="text" class="form-control" id="state" [(ngModel)]="student.state">
                 </div>
               </div>
-    
+
               <div class="col-md-3">
                 <div class="form-group mr-2">
                   <label for="city">City :</label>
                   <input type="text" class="form-control" id="city" [(ngModel)]="student.city">
                 </div>
               </div>
-    
+
               <div class="col-md-3">
                 <div class="form-group mr-2">
                   <label for="pcode">Pin Code :</label>
@@ -76,10 +89,11 @@
                 </div>
               </div>
             </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </div>
-<div class="btn btn-primary" (click)="onSave(student)">Save</div>
 <hr>
 <app-studentlist></app-studentlist>
