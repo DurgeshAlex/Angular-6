@@ -13,7 +13,9 @@ export class StudentService {
   getStudents():Student[]{
     return this.studentList;
   }
-
+  getTotalStudent(){
+    return this.studentList.length;
+  }
 
   constructor() { }
 }
