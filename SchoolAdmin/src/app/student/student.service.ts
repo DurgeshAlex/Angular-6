@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { Student } from './Student';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root'  
 })
 export class StudentService {
   private studentList: Student[]=[];

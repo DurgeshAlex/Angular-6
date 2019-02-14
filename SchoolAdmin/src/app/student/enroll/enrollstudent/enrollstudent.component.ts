@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Student } from '../../student/Student';
-import { StudentService } from '../../student/student.service';
+import { Student } from '../../Student';
+import { StudentService } from '../../student.service';
 
 @Component({
   selector: 'app-enrollstudent',

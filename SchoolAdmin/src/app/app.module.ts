@@ -6,13 +6,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { ContentComponent } from './content/content.component';
 import { LeftsidebarComponent } from './leftsidebar/leftsidebar.component';
 import { AlertModule } from 'ngx-bootstrap';
-import { DashboardComponent } from './content/dashboard/dashboard.component';
-import { EnrollstudentComponent } from './content/enroll/enrollstudent/enrollstudent.component';
-import { StudentComponent } from './content/student/student.component';
-import { StudentlistComponent } from './content/student/studentlist/studentlist.component';
+import { StudentModule } from './student/student.module';
+import { AdminModule } from './admin/admin.module';
 
 
 @NgModule({
@@ -20,19 +17,15 @@ import { StudentlistComponent } from './content/student/studentlist/studentlist.
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    ContentComponent,
-    LeftsidebarComponent,
-    DashboardComponent,
-    EnrollstudentComponent,
-    StudentComponent,
-    StudentlistComponent
-    
+    LeftsidebarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     AlertModule.forRoot(),
-    FormsModule
+    FormsModule,
+    StudentModule,
+    AdminModule
 
   ],
   providers: [],

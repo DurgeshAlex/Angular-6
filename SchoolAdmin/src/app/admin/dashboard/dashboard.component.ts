@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { StudentService } from '../student/student.service';
+import { StudentService } from 'src/app/student/student.service';
 
 @Component({
   selector: 'app-dashboard',
