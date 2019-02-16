@@ -3,3 +3,6 @@ SchoolAdmin/.editorconfig
 .DS_Store
 SchoolAdmin/src/assets/.gitkeep
 SchoolAdmin/Untitled.code-workspace
+featuremodule/.editorconfig
+featuremodulewithlazyloading/.editorconfig
+routing/.editorconfig
