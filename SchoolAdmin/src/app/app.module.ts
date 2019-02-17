@@ -24,8 +24,8 @@ import { AdminModule } from './admin/admin.module';
     AppRoutingModule,
     AlertModule.forRoot(),
     FormsModule,
-    StudentModule,
-    AdminModule
+    //StudentModule,
+    //AdminModule
 
   ],
   providers: [],

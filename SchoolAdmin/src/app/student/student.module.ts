@@ -4,6 +4,7 @@ import { StudentlistComponent } from './studentlist/studentlist.component';
 import { EnrollstudentComponent } from './enroll/enrollstudent/enrollstudent.component';
 import { FormsModule } from '@angular/forms';
 import { AdminModule } from '../admin/admin.module';
+import { StudentRoutingModule } from './student-routing.module';
 
 @NgModule({
     declarations: [
@@ -14,7 +15,8 @@ import { AdminModule } from '../admin/admin.module';
     imports: [
         CommonModule,
         FormsModule,
-        AdminModule
+        AdminModule,
+        StudentRoutingModule
     ],
     exports:[
        // EnrollstudentComponent,

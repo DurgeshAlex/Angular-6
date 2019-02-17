@@ -1,12 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { EnrollstudentComponent } from './student/enroll/enrollstudent/enrollstudent.component';
-import { DashboardComponent } from './admin/dashboard/dashboard.component';
 
 const routes: Routes = [
   { path: '', redirectTo:'/admin/dashboard',  pathMatch: 'full' },
-  { path: 'admin/dashboard',  component: DashboardComponent },
-  { path: 'admin/enroll/student', component: EnrollstudentComponent }
+  { path:'admin' , loadChildren:'./admin/admin.module#AdminModule'},
+  { path: 'admin/student', loadChildren:'./student/student.module#StudentModule'}
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
