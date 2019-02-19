@@ -8,5 +8,6 @@ export class Student{
     state:string;
     city:string;
     pinCode: number;
-
+    course:string;
+    rollNo:string;
 }

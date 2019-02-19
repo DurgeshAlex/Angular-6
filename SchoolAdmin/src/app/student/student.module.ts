@@ -5,11 +5,13 @@ import { EnrollstudentComponent } from './enroll/enrollstudent/enrollstudent.com
 import { FormsModule } from '@angular/forms';
 import { AdminModule } from '../admin/admin.module';
 import { StudentRoutingModule } from './student-routing.module';
+import { SearchComponent } from './search/search.component';
 
 @NgModule({
     declarations: [
         StudentlistComponent,
-        EnrollstudentComponent
+        EnrollstudentComponent,
+        SearchComponent
     ],
 
     imports: [

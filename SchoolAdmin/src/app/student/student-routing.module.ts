@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { EnrollstudentComponent } from './enroll/enrollstudent/enrollstudent.component';
 import { StudentlistComponent } from './studentlist/studentlist.component';
+import { SearchComponent } from './search/search.component';
 
 const routes: Routes = [
 
@@ -14,6 +15,10 @@ const routes: Routes = [
     {
         path: 'enroll',
         component: EnrollstudentComponent
+    },
+    {
+        path:'search',
+        component:SearchComponent
     }
 
 
