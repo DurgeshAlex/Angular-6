@@ -8,8 +8,6 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { LeftsidebarComponent } from './leftsidebar/leftsidebar.component';
 import { AlertModule } from 'ngx-bootstrap';
-import { StudentModule } from './student/student.module';
-import { AdminModule } from './admin/admin.module';
 
 
 @NgModule({

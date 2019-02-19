@@ -1,0 +1,118 @@
+<div class="card">
+  <div class="card-header">
+    <div class="row my-auto">
+      <div class="col-md-6 my-auto">
+        <h3>
+          <div class="badge badge-pill badge-info">Register Staff </div>
+        </h3>
+      </div>
+      <div class="col-md-6">
+        <div class="d-flex justify-content-end">
+          <div class="btn btn-outline-primary" (click)="onSave(student)">Save</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card-body">
+
+    <div class="accordion" id="staffenrollform">
+      <div class="card">
+        <div class="card-header text-info">
+          <div data-toggle="collapse" aria-expanded="true" data-target="#basicinfo" aria-controls="basicinfo">
+            Basic Ino
+          </div>
+        </div>
+        <div id="basicinfo" class="collapse show" data-parent="#staffenrollform">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="form-group mr-2">
+                  <label for="name">Employee Name</label>
+                  <input type="text" [(ngModel)]="staff.name" class="form-control" id="name">
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group mr-2">
+                  <label for="email">Employee Role</label>
+                  <input type="email" class="form-control" id="email" [(ngModel)]="staff.role">
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <div class="form-group mr-2">
+                  <label for="contactnumber">Contact No</label>
+                  <input type="number" class="form-control" id="contactnumber" [(ngModel)]="staff.contactNo">
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <div class="form-group mr-2">
+                  <label for="adhar">Email Address</label>
+                  <input type="text" class="form-control" id="adhar" [(ngModel)]="staff.email">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+                <div class="form-group mr-2">
+                  <label for="name">Adhar</label>
+                  <input type="text" [(ngModel)]="staff.adharNo" class="form-control" id="name">
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group mr-2">
+                  <label for="email">Pan No</label>
+                  <input type="email" class="form-control" id="email" [(ngModel)]="staff.panNo">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Address Details-->
+    <div class="card">
+      <div class="card-header text-info">
+        <div class="collapsed" data-toggle="collapse" aria-expanded="flase" data-target="#addressinfo" aria-controls="addressinfo">
+          Address Details
+        </div>
+      </div>
+
+      <div id="addressinfo" class="collapse" data-parent="#staffenrollform">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="form-group mr-2">
+                <label for="name">Street Name</label>
+                <input type="text" [(ngModel)]="staff.street" class="form-control" id="name">
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="form-group mr-2">
+                <label for="email">City</label>
+                <input type="email" class="form-control" id="email" [(ngModel)]="staff.city">
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="form-group mr-2">
+                <label for="contactnumber">State</label>
+                <input type="number" class="form-control" id="contactnumber" [(ngModel)]="staff.state">
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="form-group mr-2">
+                <label for="adhar">Pin Code</label>
+                <input type="text" class="form-control" id="adhar" [(ngModel)]="staff.pinCode">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Address Details End-->
+
+  </div>
+</div>
+<hr>
