@@ -5,10 +5,10 @@ import { EnrollComponent } from './enroll/enroll.component';
 const routes:Routes=[
     {
         path:'',
-        redirectTo:'/enroll',
+        redirectTo:'enroll',
         pathMatch:'full',
         children:[
-            {path:'enroll', component:EnrollComponent}
+            { path:'enroll', component:EnrollComponent}
         ]
     }
 ];

@@ -8,6 +8,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { LeftsidebarComponent } from './leftsidebar/leftsidebar.component';
 import { AlertModule } from 'ngx-bootstrap';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { AlertModule } from 'ngx-bootstrap';
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    LeftsidebarComponent
+    LeftsidebarComponent,
+    PagenotfoundComponent
   ],
   imports: [
     BrowserModule,
